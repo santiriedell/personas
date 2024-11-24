@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestor Personas</h1>
+    <p>Apreta el botón "Crear Persona" para ir al apartado "Registrar Persona"</p>
+    <button id="crearBtn" onclick="mostrarFormulario()">Crear persona</button>
+    <button id="crearOtroBtn" style="display: none;" onclick="mostrarFormulario()">Crear otra persona</button>
+
+    <div id="form" style="display: none;">
+        <h3>Registrar Persona</h3>
+        <p>Apreta el botón "Registrar Persona"para Registrar la persona</p>
+        <button onclick="crearPersona()">Registrar Persona</button>
+    </div>
+
+    <div id="info" style="display: none;">
+        <p>A continuación se motrara la informacion de la persona registrada previamente</p>
+        <h3>Nombre: <span id="nombre"></span></h3>
+        <h3>Apellido: <span id="apellido"></span></h3>
+        <h3>DNI: <span id="dni"></span></h3>
+        <h3>Teléfono: <span id="telefono"></span></h3>
+        <h3>Correo electrónico: <span id="correo"></span></h3>
+        <h3>Saldo: $<span id="saldo"></span></h3>
+    </div>
+
+    <button onclick="anteriorPersona()" style="display: none;" id="anteriorBtn">Anterior persona</button>
+    <button onclick="siguientePersona()" style="display: none;" id="siguienteBtn">Siguiente persona</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
